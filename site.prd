@@ -1,0 +1,38 @@
+Company = "Rogue Pineapple"
+Slogan = "Keep it magical"
+Short business description = "At Rogue Pineapple we love all things snarky and magical. Express yourself in confidence, and live in comfort."
+
+Please build an ecommerce site for my company Rogue Pineapple. We sell custom designs for printing on shirts, sweatshirts, and hats. We also sell laser-etched designs for cups, cutting boards, business cards, key chains, etc. The primary site for our customers should be multi-page. Home Page should be the about us and have a spotlight products spinner section that shows the image of the products that are marked as "spotlight".  The other page will be "Products" with a sub-navigation for "Clothing" or "Engravings". There will be a search at the top to find products or tags for the product. The Clothing subpage will only show effective products marked as clothing or engravings, based on the subpage.
+
+We will need to have an admin site page as well to add and edit products. Products will have a thumbnail, larger image, description, tags, type dropdown(clothing, engraving), image captions, effective, expiration dates, spotlight checkbox, pricing, sizes, buy now link that will go to printify, and whatever else you think might be needed to market and sell these type of products. The admin page should be accessible at a subdomain /admin and be password protected with a static password from a .env file. Data will be stored in NoSql. There will be a "Build" button that will pull all the effective and future effective products and build html for the products customer facing page for the fastest load time.
+
+Database: Supabase
+
+Hosting: Netlify
+
+
+
+
+About Us = ```
+Welcome to RoguePineapple
+Where everyday magic meets comfy designs.
+
+We’re all about turning the ordinary into something enchanting. Whether it’s a cozy tee that makes you smile, a mug that starts your day with a sparkle, or prints that vibe with your soul.
+Everything here is made to keep it magical.
+
+Designed with heart, made on demand, and sprinkled with good vibes straight from our corner of the woods.
+```
+
+Pull Products script:
+```
+We will need to pull the list of products from printify using the printifySDK.js and save the list to the supabase of products. The products need to be linked to printify so that when we pull again we do not get duplicates.
+
+Update my supabase products data structure to include anything from printify that I might be missing. 
+```
+https://printify.com/blog/powerful-custom-solutions-with-printify-api/#Information-Export
+Printify API docs: https://developers.printify.com/#overview
+
+The Buy Now should link to the printify popup site for that specific product: https://rogue-pineapple.printify.me/
+
+example product url: https://rogue-pineapple.printify.me/product/19394460/cute-corgi-unisex-jersey-short-sleeve-tee
+
